@@ -43,6 +43,9 @@
   .card-icon {
     @apply flex flex-col justify-center h-full mx-auto;
   }
+  .card-icon-servicos {
+    @apply mx-auto h-full mt-24;
+  }
 }
 
 @layer utilities {
