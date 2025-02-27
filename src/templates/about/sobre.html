@@ -2,11 +2,12 @@
   <div
     class="absolute -top-1 left-1/2 transform -translate-x-1/2 -translate-y-1/2 grid grid-cols-1 md:grid-cols-3 gap-0 w-10/12 max-w-7xl">
 
+    <!-- Card 1 - Taxa de Sucesso -->
     <div
       class="card rounded-xl shadow-[0_3px_10px_rgb(0,0,0,0.2)] flex-row bg-base-200 text-neutral w-[420px] mx-auto px-2 mr-0">
       <div class="card-icon">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-          class="w-24 h-24">
+          class="w-24 h-24 text-secondary">
           <path stroke-linecap="round" stroke-linejoin="round"
             d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
@@ -14,35 +15,37 @@
       <div class="card-body p-4 items-center">
         <h2 class="card-title title-font text-3xl">Taxa de sucesso de 100%</h2>
         <p class="text-lg roboto-light">
-          Clientes satisfeitos e assegurados de seus direitos. 
+          Clientes satisfeitos e assegurados de seus direitos.
         </p>
       </div>
     </div>
 
+    <!-- Card 2 - Serviços Especializados -->
     <div
       class="card rounded-xl shadow-[0_3px_10px_rgb(0,0,0,0.2)] flex-row bg-base-200 text-neutral w-[420px] mx-auto px-2">
       <div class="card-icon">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-          class="w-24 h-24">
+          class="w-24 h-24 text-secondary">
           <path stroke-linecap="round" stroke-linejoin="round"
-            d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" />
         </svg>
       </div>
       <div class="card-body p-4 items-center">
-        <h2 class="card-title title-font text-3xl">Serviços especializados </h2>
+        <h2 class="card-title title-font text-3xl">Serviços especializados</h2>
         <p class="text-lg roboto-light">
-          Atuação especializada em Direito Civil, Direito Trabalhista e Direito Penal.
+          Atuação especializada em Direito Civil, Trabalhista e Penal.
         </p>
       </div>
     </div>
 
+    <!-- Card 3 - Altamente Recomendado -->
     <div
       class="card rounded-xl shadow-[0_3px_10px_rgb(0,0,0,0.2)] flex-row bg-base-200 text-neutral w-[420px] mx-auto px-2 ml-0">
       <div class="card-icon">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-          class="w-24 h-24">
+          class="w-24 h-24 text-secondary">
           <path stroke-linecap="round" stroke-linejoin="round"
-            d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
         </svg>
       </div>
       <div class="card-body p-4 items-center">
@@ -59,27 +62,28 @@
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mr-0 items-start">
         <div class="relative flex flex-col justify-center items-center">
           <div class="absolute inset-0 bg-accent left-20 -top-8 mt-1 w-10/12 -z-10"></div>
-          <img  src="{{ static('images/fernando_nobg3.png?version=1') }}"
-            alt="Fernando Carvalho em terno azul" class="w-10/12 my-auto" />
+          <img src="{{ static('images/fernando_nobg3.png?version=1') }}" alt="Fernando Carvalho em terno azul"
+            class="w-10/12 my-auto" />
         </div>
         <div class="container flex flex-col justify-end mr-0 my-auto text-center md:text-left">
           <h1 class="title-font text-3xl font-semibold text-secondary">Sobre o nós</h1>
           <h2 class="tlgle-light text-4xl text-info-content font-bold mt-2">Bem vindo ao nosso escritório</h2>
           <div class="text-base-300 roboto-light text-md text-justify mt-5">
             <p>
-              O Escritório de <span class="text-secondary font-bold">Advocacia Fernando Carvalho</span> foi fundado com o propósito de oferecer 
-              serviços jurídicos de excelência, sempre priorizando a satisfação do cliente. 
-              Com mais de 20 anos de experiência, nossa equipe de advogados é especializada 
-              em atuar nas mais diversas áreas do Direito, como Direito Civil, Direito do Trabalho, 
-              Direito Penal e Direito Empresarial, garantindo soluções personalizadas e 
+              O Escritório de <span class="text-secondary font-bold">Advocacia Fernando Carvalho</span> foi fundado com
+              o propósito de oferecer
+              serviços jurídicos de excelência, sempre priorizando a satisfação do cliente.
+              Com mais de 20 anos de experiência, nossa equipe de advogados é especializada
+              em atuar nas mais diversas áreas do Direito, como Direito Civil, Direito do Trabalho,
+              Direito Penal e Direito Empresarial, garantindo soluções personalizadas e
               eficazes para cada caso.
             </p>
             <p class="mt-4">
-              Com unidades em <strong>Crateús</strong>, <strong>Fortaleza</strong> e <strong>Sobral</strong>, 
-              nossa equipe conta com profissionais experientes, capacitados e dedicados a 
-              proporcionar uma experiência de alto padrão, aliando conhecimento técnico e 
-              sensibilidade às necessidades de cada cliente. Nossa missão é resolver os 
-              problemas jurídicos de nossos clientes de forma rápida, segura e eficaz, 
+              Com unidades em <strong>Crateús</strong>, <strong>Fortaleza</strong> e <strong>Sobral</strong>,
+              nossa equipe conta com profissionais experientes, capacitados e dedicados a
+              proporcionar uma experiência de alto padrão, aliando conhecimento técnico e
+              sensibilidade às necessidades de cada cliente. Nossa missão é resolver os
+              problemas jurídicos de nossos clientes de forma rápida, segura e eficaz,
               sempre mantendo a confidencialidade e o sigilo profissional.
             </p>
             <p class="monsieur-la-doulaise-regular text-3xl mt-5">Fernando Carvalho</p>
