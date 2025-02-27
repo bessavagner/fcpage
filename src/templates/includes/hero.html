@@ -1,23 +1,54 @@
-<div
-  class="hero h-full"
-  style="background-image: url('{{ static('images/hero2.jpg?version=1') }}');">
-  <div class="hero-overlay bg-opacity-[0.01]"></div>
-    <div class="hero-content text-neutral-content text-center mb-40 mr-60">
+<div class="absolute top-10 left-10 ml-4 flex items-center space-x-4">
+    <img src="{{ static('images/logo.png?version=1') }}"
+        alt="Logo: duas letras F azuis, sendo uma espelhada, formando como se fosse um losango" class="w-16" />
+    <div class="flex flex-col">
+        <p id="nome-fernando" class="title-font text-[1.65rem] font-bold text-primary roboto-thin">Fernando Carvalho</p>
+        <p class="title-font text-4xl font-bold text-primary">ADVOCACIA</p>
+    </div>
+</div>
+<div class="relative hero h-screen">
+    <!-- Logo e Nome do Escritório -->
+    <div class="relative hero-content max-w-6xl">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div class="container col-span-2 flex flex-col justify-center text-center md:text-left">
-                <h1 class="font-header-4 text-base-100 leading-tight">Fernando Carvalho</h1>
-                <h2 class="title-font text-primary font-header-3 leading-tight">
-                    Excelência em Serviços Jurídicos
+                <h1 class="font-header-5 text-base-content leading-tight">Precisa de ajuda?</h1>
+                <h2 class="title-font text-primary font-header-4 leading-tight w-3/4">
+                    Nós lutamos pelo seu direito
                 </h2>
-                <p class="roboto-light text-base-100 text-xl w-[600px] mt-4">
+                <p class="roboto-light text-base-content text-xl w-[600px] mt-4">
                     Proteja o seu futuro e garanta seus direitos com o suporte de uma equipe
                     altamente especializada. Nossa missão é oferecer soluções de alto padrão
                     e confiança para cada cliente.
                 </p>
-                <a href="#contato" class="btn btn-primary-content w-32 text-primary mt-4">Fale Conosco</a>
+                <a href="#contato"
+                    class="btn btn-primary hover:btn-secondary w-64 h-20 text-primary-content mt-4 text-xl shadow-xl">Fale
+                    Conosco</a>
             </div>
             <div class="flex flex-col justify-center text-center md:text-left">
             </div>
         </div>
+        <div class="absolute right-0 top-0 h-full p-[1rem]">
+            <img class="h-full" src="{{ static('images/fernando_grad.png?version=1') }}"
+                alt="Fernando Carvalho em terno azul" class="bg-transparent" />
+            <div class="absolute inset-0 bg-primary scale-95 ml-4 mt-1 h-full -z-10"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-base-100 to-transparent w-2/5 h-[full]"></div>
+        </div>
     </div>
 </div>
+<script>
+    const nome = document.getElementById('nome-fernando');
+    //const currentTheme = localStorage.getItem('theme') || 'custom';
+    //const themeToggle = document.querySelector('.theme-controller');
+    themeToggle.addEventListener('change', function () {
+        console.log(currentTheme);
+        console.log(nome.textContent);
+        if (themeToggle.checked) {
+            nome.classList.remove('text-primary');
+            nome.classList.add('text-primary-content');
+        } else {
+            nome.classList.remove('text-primary-content');
+            nome.classList.add('text-primary');
+        }
+    });
+
+</script>
