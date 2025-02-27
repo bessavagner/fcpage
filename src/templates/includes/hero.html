@@ -35,20 +35,3 @@
         </div>
     </div>
 </div>
-<script>
-    const nome = document.getElementById('nome-fernando');
-    //const currentTheme = localStorage.getItem('theme') || 'custom';
-    //const themeToggle = document.querySelector('.theme-controller');
-    themeToggle.addEventListener('change', function () {
-        console.log(currentTheme);
-        console.log(nome.textContent);
-        if (themeToggle.checked) {
-            nome.classList.remove('text-primary');
-            nome.classList.add('text-primary-content');
-        } else {
-            nome.classList.remove('text-primary-content');
-            nome.classList.add('text-primary');
-        }
-    });
-
-</script>
