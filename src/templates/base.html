@@ -16,7 +16,8 @@
         <meta name="description" content="Escritório de advocacia Fernando Carvalho. Soluções jurídicas de alto padrão e excelência em atendimento.">
         <meta name="keywords" content="Advocacia, Escritório de Advocacia, Direito, Serviços Jurídicos, Fernando Carvalho">
         <meta name="author" content="Fernando Carvalho Advocacia">
-        <link rel="preload" href="{{ static('images/hero.jpg?version=1') }}" as="image">
+        <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqjR-vMWDpbEnQ20BA-PoAkuTOO_dRoPM&callback=console.debug&libraries=maps,marker&v=beta"></script>
+        <!-- <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqjR-vMWDpbEnQ20BA-PoAkuTOO_dRoPM&callback=initMap"></script> -->
     </head>
 
     <body class="font-base">
@@ -24,5 +25,5 @@
         {% block content %}{% endblock %}
         {% block footer %}{% include 'includes/footer.html' %}{% endblock %}
     </body>
-
+      
 </html>

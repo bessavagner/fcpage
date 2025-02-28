@@ -52,6 +52,12 @@
 }
 
 @layer utilities {
+  #map { 
+    height: 500px;
+    width: 100%;
+    border-radius: 1rem;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+  }
   svg {
     shape-rendering: geometricPrecision;
     overflow: visible;

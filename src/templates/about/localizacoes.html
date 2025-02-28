@@ -1,3 +1,7 @@
+
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/@googlemaps/extended-component-library/0.6.11/index.min.js"></script>
+<gmpx-api-loader key="AIzaSyDqjR-vMWDpbEnQ20BA-PoAkuTOO_dRoPM" solution-channel="GMP_QB_locatorplus_v11_cABD"></gmpx-api-loader>
+
 <div class="relative flex items-center w-full h-full bg-base-100 text-base-content">
   <div class="container mx-auto">
     <div class="text-center my-10">
@@ -6,43 +10,78 @@
         Visite-nos em uma de nossas unidades.
       </p>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mt-40">
-      <div
-        class="card rounded-xl shadow-[0_3px_10px_rgb(0,0,0,0.2)] flex-row items-center bg-base-200 text-neutral w-[320px] mx-auto px-2">
-        <div class="card-body p-4 items-center">
-          <h2 class="card-title title-font text-2xl">Crateús</h2>
-          <p class="text-md roboto-thin">R. Cel. Lúcio, 649A, Centro.</p>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-            stroke="currentColor" class="w-24 h-24">
-            <path stroke-linecap="round" stroke-linejoin="round"
-              d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-          </svg>
-        </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-2 w-3/4 mx-auto">
+      <div id="maps">
+
+        <gmpx-store-locator map-id="3118eefafa1c66e7"></gmpx-store-locator>
+
+        <!-- <gmp-map center="-4.291848642255531,-39.711032419338984" zoom="7" map-id="3118eefafa1c66e7">
+          <gmp-advanced-marker position="-5.1777167320251465,-40.66796875" title="Sede Crateús"></gmp-advanced-marker>
+          <gmp-advanced-marker position="-3.7778127912807022, -38.48297419211736" title="Sede Fortaleza"></gmp-advanced-marker>
+          <gmp-advanced-marker position="-3.6899252182733973, -40.35305541725982" title="Sede Sobral"></gmp-advanced-marker>
+        </gmp-map> -->
       </div>
-      <div
-        class="card rounded-xl shadow-[0_3px_10px_rgb(0,0,0,0.2)] flex-row items-center bg-base-200 text-neutral w-[320px] mx-auto px-2">
-        <div class="card-body p-4 items-center">
-          <h2 class="card-title title-font text-2xl">Fortaleza</h2>
-          <p class="text-md roboto-thin">R. José de Alencar Ramos, 385, Luciano Cavalcante.</p>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-            stroke="currentColor" class="w-24 h-24">
-            <path stroke-linecap="round" stroke-linejoin="round"
-              d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-          </svg>
+      <div id="addresses" class="grid grid-cols-1 gap-2 mx-auto">
+        <div
+          class="card rounded-xl shadow-[0_3px_10px_rgb(0,0,0,0.2)] flex-row items-center bg-base-200 text-neutral w-[320px] mx-auto px-2 hover:bg-base-300">
+          <div class="card-body p-4 items-center">
+            <h2 class="card-title title-font text-2xl">Crateús</h2>
+            <p class="text-md roboto-thin">R. Cel. Lúcio, 649A, Centro.</p>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-24 h-24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
         </div>
-      </div>
-      <div
-        class="card rounded-xl shadow-[0_3px_10px_rgb(0,0,0,0.2)] flex-row items-center bg-base-200 text-neutral w-[320px] mx-auto px-2">
-        <div class="card-body p-4 items-center">
-          <h2 class="card-title title-font text-2xl">Sobral</h2>
-          <p class="text-md roboto-thin">Av. Lúcia Sabóia, 515 sala 05, Centro.</p>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-            stroke="currentColor" class="w-24 h-24">
-            <path stroke-linecap="round" stroke-linejoin="round"
-              d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-          </svg>
+
+        <div
+          class="card rounded-xl shadow-[0_3px_10px_rgb(0,0,0,0.2)] flex-row items-center bg-base-200 text-neutral w-[320px] mx-auto px-2 hover:bg-base-300">
+          <div class="card-body p-4 items-center">
+            <h2 class="card-title title-font text-2xl">Fortaleza</h2>
+            <p class="text-md roboto-thin">R. José de Alencar Ramos, 385, Luciano Cavalcante.</p>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-24 h-24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
         </div>
+
+        <div
+          class="card rounded-xl shadow-[0_3px_10px_rgb(0,0,0,0.2)] flex-row items-center bg-base-200 text-neutral w-[320px] mx-auto px-2 hover:bg-base-300">
+          <div class="card-body p-4 items-center">
+            <h2 class="card-title title-font text-2xl">Sobral</h2>
+            <p class="text-md roboto-thin">Av. Lúcia Sabóia, 515 sala 05, Centro.</p>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-24 h-24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
 </div>
+<script>
+  const CONFIGURATION = {
+    "locations": [
+      {"title":"R. Cel. Lúcio, 649","address1":"R. Cel. Lúcio","address2":"649 - Centro, Crateús - CE, 63700-000, Brazil","coords":{"lat":-5.177673879310516,"lng":-40.66799673558198},"placeId":"Ej5SLiBDZWwuIEzDumNpbywgNjQ5IC0gQ2VudHJvLCBDcmF0ZcO6cyAtIENFLCA2MzcwMC0wMDAsIEJyYXppbCIxEi8KFAoSCS3iEzq29ZYHEW_zz7bOWMcPEIkFKhQKEgnzqx84t_WWBxGLPb12ccY88g"},
+      {"title":"Rua José Alencar Ramos, 385","address1":"Rua José Alencar Ramos","address2":"385 - Eng. Luciano Cavalcante, Fortaleza - CE, 60813-565, Brazil","coords":{"lat":-3.7778775282236556,"lng":-38.482817020237725},"placeId":"ChIJHVEqmvdFxwcRrOKlMA_cEBA"},
+      {"title":"Av. Lúcia Sabóia, 515 - sala 05","address1":"Av. Lúcia Sabóia","address2":"515 - sala 05 - Centro, Sobral - CE, 62010-830, Brazil","coords":{"lat":-3.690086860446115,"lng":-40.353070177909856},"placeId":"EkpBdi4gTMO6Y2lhIFNhYsOzaWEsIDUxNSAtIHNhbGEgMDUgLSBDZW50cm8sIFNvYnJhbCAtIENFLCA2MjAxMC04MzAsIEJyYXppbCIjGiEKFgoUChIJgbJexOPG6gcRR2Nh-hyClZ4SB3NhbGEgMDU"}
+    ],
+    "mapOptions": {"center":{"lat":38.0,"lng":-100.0},"fullscreenControl":true,"mapTypeControl":false,"streetViewControl":false,"zoom":4,"zoomControl":true,"maxZoom":17,"mapId":""},
+    "mapsApiKey": "AIzaSyDqjR-vMWDpbEnQ20BA-PoAkuTOO_dRoPM",
+    "capabilities": {"input":true,"autocomplete":true,"directions":false,"distanceMatrix":true,"details":false,"actions":false}
+  };
+
+</script>
+<script type="module">
+  document.addEventListener('DOMContentLoaded', async () => {
+    await customElements.whenDefined('gmpx-store-locator');
+    const locator = document.querySelector('gmpx-store-locator');
+    locator.configureFromQuickBuilder(CONFIGURATION);
+  });
+</script>
