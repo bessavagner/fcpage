@@ -46,9 +46,21 @@
   .card-icon-servicos {
     @apply mx-auto h-full mt-24;
   }
+  .header-2 {
+    @apply text-xl title-font font-bold;
+  }
 }
 
 @layer utilities {
+  svg {
+    shape-rendering: geometricPrecision;
+    overflow: visible;
+  }
+  .header-2:before, .header-2:after {
+    content:'\00a0\00a0\00a0\00a0';
+    text-decoration: line-through;
+    margin: auto 0.5em;
+  }
   .title-font {
     font-family: "Playfair Display", serif;
   }
