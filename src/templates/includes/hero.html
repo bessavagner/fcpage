@@ -1,4 +1,4 @@
-<div class="absolute top-10 left-10 ml-4 flex items-center space-x-4">
+<div class="absolute top-10 left-0 md:left-10 ml-4 flex items-center space-x-4">
     <img src="{{ static('images/logo.png?version=1') }}"
         alt="Logo: duas letras F azuis, sendo uma espelhada, formando como se fosse um losango" class="w-16" />
     <div class="flex flex-col">
@@ -6,28 +6,26 @@
         <p class="title-font text-4xl font-bold text-primary">ADVOCACIA</p>
     </div>
 </div>
-<div class="relative hero h-screen">
+<div class="relative md:hero h-screen mx-auto mt-20 md:mt-0">
     <!-- Logo e Nome do Escritório -->
-    <div class="relative hero-content max-w-6xl">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div class="container col-span-2 flex flex-col justify-center text-center md:text-left">
+    <div class="relative hero-content max-w-6xl mx-auto mt-40 md:mt-0">
+        <div class="flex flex-col md:grid md:grid-cols-3 gap-4 mx-auto">
+            <div class="container md:col-span-2 flex flex-col justify-center text-center md:text-left">
                 <h1 class="font-header-5 text-neutral leading-tight">Precisa de ajuda?</h1>
-                <h2 class="title-font text-primary font-header-4 leading-tight w-3/4">
+                <h2 class="title-font text-primary font-header-4 leading-tight w-full md:w-3/4">
                     Nós lutamos pelo seu direito
                 </h2>
-                <p class="roboto-light text-neutral text-xl w-[600px] mt-4">
+                <p class="roboto-light text-neutral text-xl w-full md:w-[600px] mt-4">
                     Proteja o seu futuro e garanta seus direitos com o suporte de uma equipe
                     altamente especializada. Nossa missão é oferecer soluções de alto padrão
                     e confiança para cada cliente.
                 </p>
                 <a href="#contato"
-                    class="btn btn-warning hover:btn-secondary w-64 h-20 text-warning-content mt-4 text-xl shadow-xl">Fale
+                    class="btn btn-warning hover:btn-secondary w-64 h-20 text-warning-content mt-4 text-xl shadow-xl self-center md:self-start">Fale
                     Conosco</a>
             </div>
-            <div class="flex flex-col justify-center text-center md:text-left">
-            </div>
         </div>
-        <div class="absolute right-0 top-0 h-full p-[1rem]">
+        <div class="invisible md:visible absolute right-0 top-0 h-full p-[1rem]">
             <img class="h-full" src="{{ static('images/fernando_grad.png?version=1') }}"
                 alt="Fernando Carvalho em terno azul" class="bg-transparent" />
             <div class="absolute inset-0 bg-primary scale-95 ml-4 mt-1 h-full -z-10"></div>
