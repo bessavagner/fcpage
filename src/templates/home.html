@@ -9,7 +9,11 @@
                 {% include './includes/hero.html' %}
             <div id="arrow-section-about"></div>
         </section>
-        <section id="section-about">
+        <section id="section-cards" class="h-[calc(100vh/3)] md:h-0 md:z-10">
+            {% include './includes/cards.html' %}
+            <div id="arrow-section-about"></div>
+        </section>
+            <section id="section-about">
             {% include './about/sobre.html' %}
             <div id="arrow-section-servicos"></div>
         </section>
